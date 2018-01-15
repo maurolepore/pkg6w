@@ -1,6 +1,6 @@
 # rpkgs-6ws: The Six Ws of R packages
 
-With a user in mind (not a developer), the goal of this repository is to answer the [Six Ws](https://en.wikipedia.org/wiki/Five_Ws) about R packages. You are welcome to edit and use this information. 
+With a user in mind (not a developer), the goal of this repository is to answer the [Six W's](https://en.wikipedia.org/wiki/Five_Ws) about R packages. You are welcome to edit and use this information. 
 
 # What are R packages?
 
