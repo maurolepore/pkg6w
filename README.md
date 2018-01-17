@@ -25,6 +25,8 @@ Can you have a deflated _Inflatable Castle_? Yes you can. The deflated _Inflatab
 
 # When is an R packages created, shared, used and updated?
 
+[Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages?mobile_site=true)
+
 # How can I find, install and use an R package?
 
 # Summary
