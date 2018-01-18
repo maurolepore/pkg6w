@@ -4,20 +4,31 @@ Many R users struggle with R packages. The problem is largely because the useful
 
 
 
-# What is an R package?
-
+# What Is An R Package?
 * Quote definition from rpkgs or JB slides
 * Image of devtools cheetsheet
 
-__Definition__. An R package is a kind of _Inflatable Castle_: A castle that inflates. An _Inflatable Castle_ can be big and red, but it can't have a massive hole -- the hole won't let it inflate, so if your castle has a massive hole it is no longer an _Inflatable Castle_. (Sad, I know). Similarly, an R package is a very specific collection of files and folders. To meet the definition of "R package", the names and structure of those files and folders have to meet some expectations. If you doon't meet them, you have files and folders but not an R package.
+## Definition
+An R package is a kind of _Inflatable Castle_: A castle that inflates. An _Inflatable Castle_ can be big and red, but it can't have a massive hole -- the hole won't let it inflate, so if your castle has a massive hole it is no longer an _Inflatable Castle_. (Sad, I know). Similarly, an R package is a very specific collection of files and folders. To meet the definition of "R package", the names and structure of those files and folders have to meet some expectations. If you doon't meet them, you have files and folders but not an R package.
 
-__Source versus built__. 
-
+## Source Versus Built
 Can you have a deflated _Inflatable Castle_? Yes you can. The deflated _Inflatable Castle_ isn't good for jumping on, but it is good for other things, like cleaning it. Similarly, to clean or maintain an R package you need its "deflated" or source state. The source of a package has all you need to build it but you can't use it for its main purpose until you actually build it. This built, "inflated", state of an R package is what you use to have fun.
- 
-# Why is an R package useful?
 
+## The Useful Stuff In An R Package
+(What is each of these items? Link to examples)
+* Functions (computer programs)
+* Data
+* Index: 
+* Descriptons
+* Help files
+* Dependencies
 
+# Why Is An R Package Useful?
+An R package is useful because it makes it easy to share and use the functions (computer programs) and/or the data that it contains, and the documents that explain how to use those functions (See What Is An R Package > The Useful Stuff In An R Package xxx_add_link). 
+
+An R package makes all its components available from one place, the R console.
+
+Having everything you need in one place is convenient: You
 
 # Who creates, maintains, and uses an R package?
 
