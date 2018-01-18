@@ -27,14 +27,38 @@ Can you have a deflated _Inflatable Castle_? Yes you can. The deflated _Inflatab
 An R package is useful because it makes it easy to share and use the functions (computer programs) and/or the data that it contains, and the documents that explain how to use those functions (See What Is An R Package > The Useful Stuff In An R Package xxx_add_link). An R package makes all its components available from one place: The R console. Thus R packages help you to find what you need quickly. Thay way you can spend most of your time working on whatever you want to accomplish rather than on the mundane task of searching for auxiliary information scattered in your computer or online. Having everything you need structured as an R package is convenient.
 
 # Who creates, maintains, and uses an R package?
+* Anyone can create an R package. 
+* If the package to be shared, someone must maintain it
 
 # Where does an R package live?
+* Your computer
+* CRAN
+* Git Hub
+* Other repositories (xxx_examples from `install_REPOSITORY()`)
 
-# When is an R packages created, shared, used and updated?
+# When Is An R Packages Created, Shared, Used, And Updated?
+* Created in someone's computer.
+* Shared whenever they are ready
+    * Explain the concept of pre-release and release (CRAN, GitHub, devtools::release\*()).
+* Updated whenever the maintainer wants.
+* [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages?mobile_site=true)
 
-[Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages?mobile_site=true)
 
-# How can I find, install and use an R package?
+# How To Find, Install, And Use An R Package?
+## Find An R Packages
+* Point to blog about how to find R packages
+
+## Install An R Package
+* `install.packages()`
+* __remotes__ and __devtools__
+    * install_github()`
+    * install_REPOSITORY()`
+
+## Uninstall An R Package
+* Always with `remove.packages()`, regardless of where you installed it from.
+
+## Use An R Package
+
 
 # Summary
 
