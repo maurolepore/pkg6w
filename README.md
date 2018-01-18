@@ -24,11 +24,7 @@ Can you have a deflated _Inflatable Castle_? Yes you can. The deflated _Inflatab
 * Dependencies
 
 # Why Is An R Package Useful?
-An R package is useful because it makes it easy to share and use the functions (computer programs) and/or the data that it contains, and the documents that explain how to use those functions (See What Is An R Package > The Useful Stuff In An R Package xxx_add_link). 
-
-An R package makes all its components available from one place, the R console.
-
-Having everything you need in one place is convenient: You
+An R package is useful because it makes it easy to share and use the functions (computer programs) and/or the data that it contains, and the documents that explain how to use those functions (See What Is An R Package > The Useful Stuff In An R Package xxx_add_link). An R package makes all its components available from one place: The R console. Thus R packages help you to find what you need quickly. Thay way you can spend most of your time working on whatever you want to accomplish rather than on the mundane task of searching for auxiliary information scattered in your computer or online. Having everything you need structured as an R package is convenient.
 
 # Who creates, maintains, and uses an R package?
 
