@@ -26,9 +26,20 @@ Can you have a deflated _Inflatable Castle_? Yes you can. The deflated _Inflatab
 # Why Is An R Package Useful?
 An R package is useful because it makes it easy to share and use the functions (computer programs) and/or the data that it contains, and the documents that explain how to use those functions (See What Is An R Package > The Useful Stuff In An R Package xxx_add_link). An R package makes all its components available from one place: The R console. Thus R packages help you to find what you need quickly. Thay way you can spend most of your time working on whatever you want to accomplish rather than on the mundane task of searching for auxiliary information scattered in your computer or online. Having everything you need structured as an R package is convenient.
 
-# Who creates, maintains, and uses an R package?
-* Anyone can create an R package. 
-* If the package to be shared, someone must maintain it
+# Who creates and uses an R package?
+
+Anyone can create an R package. Simply put, you create a package if you put it together. Generally that means that you would also fix any issues and update the package. For a formal definition of the different roles you can take in relation an R package see the help file of the function [`person()`](https://goo.gl/Mk9ccJ) (click th link or run this the R console: `?person`).
+
+Also anyone can use an R package; or more precisely, everyone must use R packages. Why? Because almost everything you do in R uses code that lives in an R package. For example, if you run in the R console `1 + 2`, you are using the __base__ package. Confirm this by running in the R console `?Arithmetic` or `?`+`` (or click [here](https://goo.gl/uKKv6f)). That help file refers to the __base__ package in two places: at the very top, where it says "Arithmetic {__base__}"; and at the very bottom, where it says "[Package __base__ version ... Index]".
+
+
+## Maintain
+
+If the package to be shared, someone must maintain it. The maintainer is the person responsible for 
+
+## Use
+Anyone can use 
+
 
 # Where does an R package live?
 * Your computer
