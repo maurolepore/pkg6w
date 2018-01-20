@@ -32,10 +32,11 @@ Anyone can create an R package. Simply put, you create a package if you put it t
 Also anyone can use an R package; or more precisely, everyone must use R packages. Why? Because almost everything you do in R uses code that lives in an R package.  That is true for even the simplest computations: For example, if you run in the R console `1 + 2` you are using the __base__ package. Confirm this by running in the R console `?Arithmetic` or `?`+`` (or click [here](https://goo.gl/uKKv6f)). That help file refers to the __base__ package in two places: at the very top it says "Arithmetic {__base__}"; and at the very bottom it says "[Package __base__ version ... Index]". The package __base__ -- and a few others -- come with R. With those default packages you can do a lot of things but often you may want to use other packages to extend the basic functionality of R.
 
 # Where does an R package live?
-* Your computer
-* CRAN
-* Git Hub
-* Other repositories (xxx_examples from `install_REPOSITORY()`)
+An R package can live locally in your computer, or remotely in a number of websites such as [CRAN](https://cran.r-project.org/) [GitHub] and (https://github.com/). More specifically, an R package always lives inside a folder -- the root directory -- that contains all its components. 
+
+Notice that we commonly use the word "repo" to refer to a folder in an onilne repository (with or without code). So if someones says "go to the repo of package X" they are directing you to the website where you can see the folder containing the package X.
+
+
 
 # When Is An R Packages Created, Shared, Used, And Updated?
 * Created in someone's computer.
