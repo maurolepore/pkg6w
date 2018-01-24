@@ -8,7 +8,6 @@ Many R users struggle with R packages. The problem is largely because the useful
 * Quote definition from rpkgs or JB slides
 * Image of devtools cheetsheet
 
-## Definition
 An R package is a kind of _Inflatable Castle_: A castle that inflates. An _Inflatable Castle_ can be big and red, but it can't have a massive hole -- the hole won't let it inflate, so if your castle has a massive hole it is no longer an _Inflatable Castle_. (Sad, I know). Similarly, an R package is a very specific collection of files and folders. To meet the definition of "R package", the names and structure of those files and folders have to meet some expectations. If you doon't meet them, you have files and folders but not an R package.
 
 ## Source Versus Built
@@ -36,14 +35,35 @@ An R package can live locally in your computer, or remotely in a number of websi
 
 Notice that we commonly use the word "repo" to refer to a folder in an onilne repository (with or without code). So if someones says "go to the repo of package X" they are directing you to the website where you can see the folder containing the package X.
 
-
-
 # When Is An R Packages Created, Shared, Used, And Updated?
-* Created in someone's computer.
-* Shared whenever they are ready
+
+You create an R package in your computer whenever you combine its fundamental components (which are surprisingly few). Simply, that is when you run `devtools::create("name-of-your-package")`, or when you click these menues in RStudio: File > New Project ... > New Directory > R Package.
+
+You share an R package whenever you allow at least one more person to access it. For example:
+  * When you give your colleague the dropbox link to download the folder containing the source code of your R package.
+  * When you authorize your colleague to access the private GitHub-repo of your R package.
+  * When you publish your R package on CRAN so your colleague can install the package with `install.packages()`; or when you host your R package in a public repo (i.e. directory or folder) on GitHub so your colleague can install the package with `devtools::install_github()`.
+  * When you email your colleague the a [built binary](TODO insert link to rpkgs) version of your R package.
+
+
+
+
+
+
+xxx cont.here
+
+Notice that you can share an R package in any state of development. How can your colleague know if the code is stable? 
     * Explain the concept of pre-release and release (CRAN, GitHub, devtools::release\*()).
+  
 * Updated whenever the maintainer wants.
 * [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages?mobile_site=true)
+
+
+
+
+
+
+
 
 
 # How To Find, Install, And Use An R Package?
