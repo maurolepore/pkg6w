@@ -47,24 +47,26 @@ You share an R package whenever you allow at least one more person to access it.
   * When you publish your R package on CRAN so your colleague can install the package with `install.packages()`; or when you host your R package in a public repo (i.e. directory or folder) on GitHub so your colleague can install the package with `devtools::install_github()`.
   * When you email your colleague the a [built binary](TODO insert link to rpkgs) version of your R package.
 
-Notice that you can share an R package in any state of development. How can your colleague know if the code is still in draft stage or it is polished and safe to use? The stable snapshots (versions) of your code you can flag with a label _Release_. When you publish on CRAN a snapshot of your code, that snapshot is associated to a version number that represents that particular release. But CRAn is not the only platform that allows that. You can also release snapshots of your code even if it lives only on more informal repositories. For example, here are the instructions for [Creating Releases](https://help.github.com/articles/creating-releases/) on GitHub.
+Notice that you can share an R package in any state of development. How can your colleague know if the code is still in draft stage or it is polished and safe to use? The stable snapshots (versions) of your code you can flag with a label _Release_. When you publish on CRAN a snapshot of your code, that snapshot is associated to a version number that represents that particular release. But CRAN is not the only platform that allows that. You can also release snapshots of your code even if it lives only on more informal repositories. For example, here are the instructions for [Creating Releases](https://help.github.com/articles/creating-releases/) on GitHub.
+
+## When Are R Packages Used
+
+When you start a new R session you may need to set things up by installing and loding (opening) some packages. The steps you follow to use an R package or any other software are alike. If you want to use Chrome your neet to first install Chrome, once, and then open Chrome, every time you want to use it. Similarly, if you want to use the R package __pkg__ you need to first install __pkg__, once, and then load it every time you want to use it. 
+
+That is always the case except for a few packages that R loads automatically for you every time you start a session. You can see what those packages are with `print(.packages())`. You will notice that the package __base__ is listed, so you can directly use its objects (functions and data) -- for example `sum()`. If these packages aren't enough you need to tell R that you want to use additional packages.
+
+To tell R that you need objects from an additional package you can use two ways. Suppose you need the function `fun()` from the package __pkg__; these are your options: 
+1. Tell R once by running `library(pkg)` and then use `fun()` directly.
+2. Tell R every time you need `fun()` that it belongs to the package __pkg__ by using the sintax `pkg::fun()`.
+The first approach saves space and effort; the second one expresses provenance more clearly and avoids conflict with objects named identically but from other packages. Thus the second approach is safest but the first one is often enough. Your best choice depends on the situation.
 
 
 
 
-
-
-
-
-
-
+\
 
 
 xxx cont here.
-
-## When Are R Packages Used
-* When you run library(package)
-* When you use a function with the sintax `package::function()`
 
 ## When Are R Packages Updated
 * Updated whenever the maintainer wants.
