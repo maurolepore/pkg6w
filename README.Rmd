@@ -60,16 +60,16 @@ To tell R that you need objects from an additional package you can use two ways.
 2. Tell R every time you need `fun()` that it belongs to the package __pkg__ by using the sintax `pkg::fun()`.
 The first approach saves space and effort; the second one expresses provenance more clearly and avoids conflict with objects named identically but from other packages. Thus the second approach is safest but the first one is often enough. Your best choice depends on the situation.
 
+## When Are R Packages Updated
+
+Alive software is dynamic and R packages are no exception. While users can access a stable -- released -- version of an R package, developers may continue to change a copy of it (branch) in preparation for the next release. There is no such a thing as a finished R package; the closest to that is a dead one.
 
 
 
-\
 
 
 xxx cont here.
 
-## When Are R Packages Updated
-* Updated whenever the maintainer wants.
 * [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages?mobile_site=true)
 
 # How To Find, Install, And Use An R Package?
