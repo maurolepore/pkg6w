@@ -64,7 +64,7 @@ The first approach saves space and effort; the second one expresses provenance m
 
 Alive software is dynamic and R packages are no exception. While users can access a stable -- released -- version of an R package, developers may continue to change a copy of it (branch) in preparation for the next release. There is no such a thing as a finished R package; the closest to that is a dead one.
 
-Occationally you update an R package and realize that it changed in a way that you dislike. Are you stuck with the new version? Not at all. The packages __devtools__ and __remotes__ allow you to install older versions from CRAN, GitHub, and other repositories with [`install_version()`](https://goo.gl/Gbpz7g)` and also with [`install_<repository>()`](https://goo.gl/vGCLCV)` using the sintax `install_<repository>("user-or-organization/package@version")`, for example: `install_github("r-lib/httr@v0.4")`.
+Occationally you update an R package and realize that it changed in a way that you dislike. Are you stuck with the new version? Not at all. The packages __devtools__ and __remotes__ allow you to install older versions from CRAN, GitHub, and other repositories with [`install_version()`](https://goo.gl/Gbpz7g)` and also with [`install_<repository>()`](https://goo.gl/vGCLCV) using the sintax `install_<repository>("user-or-organization/package@version")`, for example: `install_github("r-lib/httr@v0.4")`.
 
 
 xxx cont. here. 
