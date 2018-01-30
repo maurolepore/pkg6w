@@ -71,7 +71,32 @@ xxx cont. here.
 
 # How To Find, Install, And Use An R Package?
 ## Find An R Packages
-* Point to blog about how to find R packages
+
+Finding good R packages is like finding good movies or books. These are some things you may try:
+* Search by category (xxx link CRAN task view);
+* Read reaviews (xxx link);
+* Consider expert's recomentadions (xxx @dataandme);
+* Be aware of what's trendy (e.g. tidyveres);
+* Follow specific authors that you like (xxx @hadleywickham).
+
+To predict how much pleasure or pain an R package will give you consider these questions:
+* Who wrote it? Some authors consistently write good packages and consistently avoid adding their names to bad ones. Prefer these authors.
+* Is the documentation clear? Clear writing comes only with clear thinking. Clear documentation thus shows that the author clearly understands what the package should and should not do. That author is able to efficiently fix bugs and answer your questions. Prefer these packages.
+
+xxx cont. 
+
+* Integration with other packages
+* Ease of use
+* Ease of install
+* Documentation
+* Maintenance
+* Tests
+* Permanancy
+
+
+Signs of quality:
+
+You can search for them in a number of websites xxx Point to blog about how to find R packages
 
 ## Install An R Package
 * `install.packages()`
