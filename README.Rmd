@@ -50,7 +50,6 @@ You share an R package whenever you allow at least one more person to access it.
 Notice that you can share an R package in any state of development. How can your colleague know if the code is still in draft stage or it is polished and safe to use? The stable snapshots (versions) of your code you can flag with a label _Release_. When you publish on CRAN a snapshot of your code, that snapshot is associated to a version number that represents that particular release. But CRAN is not the only platform that allows that. You can also release snapshots of your code even if it lives only on more informal repositories. For example, here are the instructions for [Creating Releases](https://help.github.com/articles/creating-releases/) on GitHub.
 
 ## When Are R Packages Used
-
 When you start a new R session you may need to set things up by installing and loding (opening) some packages. The steps you follow to use an R package or any other software are alike. If you want to use Chrome your neet to first install Chrome, once, and then open Chrome, every time you want to use it. Similarly, if you want to use the R package __pkg__ you need to first install __pkg__, once, and then load it every time you want to use it. 
 
 That is always the case except for a few packages that R loads automatically for you every time you start a session. You can see what those packages are with `print(.packages())`. You will notice that the package __base__ is listed, so you can directly use its objects (functions and data) -- for example `sum()`. If these packages aren't enough you need to tell R that you want to use additional packages.
@@ -61,17 +60,13 @@ To tell R that you need objects from an additional package you can use two ways.
 The first approach saves space and effort; the second one expresses provenance more clearly and avoids conflict with objects named identically but from other packages. Thus the second approach is safest but the first one is often enough. Your best choice depends on the situation.
 
 ## When Are R Packages Updated
-
 Alive software is dynamic and R packages are no exception. While users can access a stable -- released -- version of an R package, developers may continue to change a copy of it (branch) in preparation for the next release. There is no such a thing as a finished R package; the closest to that is a dead one.
 
 Occationally you update an R package and realize that it changed in a way that you dislike. Are you stuck with the new version? Not at all. The packages __devtools__ and __remotes__ allow you to install older versions from CRAN, GitHub, and other repositories with [`install_version()`](https://goo.gl/Gbpz7g) and also with [`install_REPOSITORY()`](https://goo.gl/vGCLCV) using the sintax `install_REPOSITORY("USER-OR-ORGANIZATION/PACKAGE@VERSION")`, for example: `install_github("r-lib/httr@v0.4")`.
 
+# How To?
 
-xxx cont. here. 
-
-# How To Find, Install, And Use An R Package?
-## Find An R Packages
-
+## How To Find An R Package?
 Finding good R packages is like finding good movies or books. These are some things you may try:
 * Search by category (xxx link CRAN task view);
 * Read reaviews (xxx link);
@@ -79,26 +74,23 @@ Finding good R packages is like finding good movies or books. These are some thi
 * Be aware of what's trendy (e.g. tidyveres);
 * Follow specific authors that you like (xxx @hadleywickham).
 
-To predict how much pleasure or pain an R package will give you consider these questions:
+## How To Judge An R Package?
+To predict how much pleasure or pain an R package will give you, consider these questions:
 * Who wrote it? Some authors consistently write good packages and consistently avoid adding their names to bad ones. Prefer these authors.
 * Is the documentation clear? Clear writing comes only with clear thinking. Clear documentation thus shows that the author clearly understands what the package should and should not do. That author is able to efficiently fix bugs and answer your questions. Prefer these packages.
+* How well does this package integration with other packages? Prefer packages designed consistently with other packages you use. A good example of this are the packages of the [__tidyverse__](xxx instert link) which share a common phylosophy (see [manifesto](xxx instert link), style (see [style guide](xxx insert link)). This means that when you learn one package of a consistent ecosystem of packages, your overhead to learning the other packages is low. 
+* How actively is the package maintained? Prefer packages that are updated often because that means that the occational bugs that users detect are fixed promptly. Even if a package had no bugs it still needs to adapt to changes in other packages it interacts with.
+* How good are the tests? Comprehensive and relevant tests may best indicate the quality of a package. Ideally you would read the package's tests. In practice, you would at least check that a large proportion of the code is covered with tests, simply by looking at a badge like this one (xxx insert covr badge) that indicates percent code coverage. High coverage doesn't warrant that the tests are relevant but low coverage shows that bugs will be undetected.
+* How long has the package been around? The longer a package is alive the greater the time it had to evolve.
+
+
 
 xxx cont. 
 
-* Integration with other packages
-* Ease of use
-* Ease of install
-* Documentation
-* Maintenance
-* Tests
-* Permanancy
+## How To Install An R Package
 
+xxx adapt blog post in fgeo about Installing Packages from GitHub. Extend it to include this subsection and also to cover uninstalling a package, checking what packages are installed and loaded, and how to use a package.
 
-Signs of quality:
-
-You can search for them in a number of websites xxx Point to blog about how to find R packages
-
-## Install An R Package
 * `install.packages()`
 * __remotes__ and __devtools__
     * install_github()`
@@ -109,6 +101,12 @@ You can search for them in a number of websites xxx Point to blog about how to f
 
 ## Use An R Package
 
+* How to access help for the package and functions
+* How to find the source code it on GitHub
+
+help(package = "package")
+
+## How to contribute
 
 # Summary
 
