@@ -96,15 +96,45 @@ xxx adapt blog post in fgeo about Installing Packages from GitHub. Extend it to 
     * install_github()`
     * install_REPOSITORY()`
 
-## Uninstall An R Package
-* Always with `remove.packages()`, regardless of where you installed it from.
+## How To Uninstall An R Package
+You can uninstall an package with `remove.packages()`; that is regardless of where you installed it from (CRAN, GitHub or other repository). If `remove.packages()` fails, you can apply brute force and remove the package manually by deleting the directory where R stores it. You can find that directory with `.libPaths()`.
+
+## How To Explore Your Packages
+
+You can see what packages you have installed with `installed.packages()`, and you can see what packages you have loaded ("opened") with `.packages()`. `.packages()` returns invisibly, meaning that to see the output on the console you need to explicitely `print()` it or assign it to an object and then print the object as you would normally do.
+
+```R
+# Shows nothing because returns invisibly
+.packages()
+
+# Shows what you want
+print(.packages())
+
+# Same
+x <- .packages()
+x
+```
+
+You can also see the loaded packages with `search()`, but the output will not be exclusively packages (see `?search()`).
+
+```R
+search()
+
+identical(search(), .packages())
+```
 
 ## Use An R Package
+
+Once you have installed a new package you may want to know what you can do with it. A good place to start if by looking at the functions' index with `help(package = "package-you-want-to-know-about")`. You can also list all the objects of a package with the autocompletion feature of RStudio. 
+
+```R
+![](https://i.imgur.com/m1iWDhM.png)
+```
 
 * How to access help for the package and functions
 * How to find the source code it on GitHub
 
-help(package = "package")
+
 
 ## How to contribute
 
