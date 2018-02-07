@@ -83,10 +83,6 @@ To predict how much pleasure or pain an R package will give you, consider these 
 * How good are the tests? Comprehensive and relevant tests may best indicate the quality of a package. Ideally you would read the package's tests. In practice, you would at least check that a large proportion of the code is covered with tests, simply by looking at a badge like this one (xxx insert covr badge) that indicates percent code coverage. High coverage doesn't warrant that the tests are relevant but low coverage shows that bugs will be undetected.
 * How long has the package been around? The longer a package is alive the greater the time it had to evolve.
 
-
-
-xxx cont. 
-
 ## How To Install An R Package
 
 xxx adapt blog post in fgeo about Installing Packages from GitHub. Extend it to include this subsection and also to cover uninstalling a package, checking what packages are installed and loaded, and how to use a package.
@@ -99,7 +95,7 @@ xxx adapt blog post in fgeo about Installing Packages from GitHub. Extend it to 
 ## How To Uninstall An R Package
 You can uninstall an package with `remove.packages()`; that is regardless of where you installed it from (CRAN, GitHub or other repository). If `remove.packages()` fails, you can apply brute force and remove the package manually by deleting the directory where R stores it. You can find that directory with `.libPaths()`.
 
-## How To Explore Your Packages
+## How To Explore Installed and Loaded Packages
 
 You can see what packages you have installed with `installed.packages()`, and you can see what packages you have loaded ("opened") with `.packages()`. `.packages()` returns invisibly, meaning that to see the output on the console you need to explicitely `print()` it or assign it to an object and then print the object as you would normally do.
 
@@ -123,20 +119,24 @@ search()
 identical(search(), .packages())
 ```
 
-## Use An R Package
+## How To Overview An R Package
 
-Once you have installed a new package you may want to know what you can do with it. A good place to start if by looking at the functions' index with `help(package = "package-you-want-to-know-about")`. You can also list all the objects of a package with the autocompletion feature of RStudio. 
+Once you have installed a new package you may want to know what you can do with it. A good place to start if by looking at the functions' index with `help(package = "package-you-want-to-know-about")`. You can also list all the objects of a package with the autocompletion feature of RStudio -- type `package::` and press the tab key.
 
 ```R
 ![](https://i.imgur.com/m1iWDhM.png)
 ```
 
-* How to access help for the package and functions
+* How to find Vignettes
+* How to find help files
 * How to find the source code it on GitHub
 
 
-
 ## How to contribute
+
+## How To Report Bugs
+
+## How To Ask For Help
 
 # Summary
 
