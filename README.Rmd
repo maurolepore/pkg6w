@@ -119,17 +119,43 @@ search()
 identical(search(), .packages())
 ```
 
-## How To Overview An R Package
+## How To Learn About An R Package
 
+### How To View The Functions Index
 Once you have installed a new package you may want to know what you can do with it. A good place to start if by looking at the functions' index with `help(package = "package-you-want-to-know-about")`. You can also list all the objects of a package with the autocompletion feature of RStudio -- type `package::` and press the tab key.
 
 ```R
 ![](https://i.imgur.com/m1iWDhM.png)
 ```
 
-* How to find Vignettes
-* How to find help files
-* How to find the source code it on GitHub
+## How To Browse Vignettes
+If an R package contains a vignette, you can find it with `browseVignettes("tidyverse")`. Also, `vignette()` lists vignettes of all packages with vignettes, and `vignette(all = FALSE)` does the same but only for the packages you have attached (those that come by default with R or that you "opened" with `library(name-of-a-package)`).
+
+## How To Find Help Files
+
+Thesa are three ways by which you can access the help file of a specific function:
+
+1. With `?name-of-the-function`, or, `?name-of-the-function()`, or `help(name-of-the-function"). The package has to be loaded where the function comes from; for example:
+
+```R
+library(tidyverse)
+?tidyverse_update()
+```
+
+2. From RStudio, step on the name of a function then press F1 on your keyboard.
+
+3. From your web browser, searh a function on Google or at https://www.rdocumentation.org/.
+
+
+## How to find the source code it on GitHub
+
+
+
+
+xxx cont here
+
+* find its repo on GitHub or other repos
+* find source code on CRAN
 
 
 ## How to contribute
@@ -139,6 +165,8 @@ Once you have installed a new package you may want to know what you can do with 
 ## How To Ask For Help
 
 # Summary
+
+## Workflow
 
 xxx Compose a paragraph with the key content of each of the six w's.
 
