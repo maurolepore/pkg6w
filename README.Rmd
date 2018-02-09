@@ -147,9 +147,17 @@ library(tidyverse)
 3. From your web browser, searh a function on Google or at https://www.rdocumentation.org/.
 
 
-## How to find the source code it on GitHub
+## How To Find The Source Code Of An R Package
 
+Occationally you may need the source code of an R package. That is the case, for example, when you want to better understand how a function works. Here are some ways to access the source code.
 
+If you installed and loaded the package and whant to learn about one specific function, you can run the bare name of that function on the R console. For example, here is the source code of the function `read.csv`.
+
+```R
+read.csv
+```
+
+That may be unhelpful because often the function you care about calls a second function, and that one calls a third one, and so on. To step into such a sequence of nested functions in at least two ways. One way is to call the function on debugger mode with `debugonce()`; Debugging is beyond the scope of this article but you can read more about it [here](xxx r packages?) and [here](xxx rstudio). A second way to step into nested functions is with RStudio -- by getting the source code and jumping from function to function by pressing F2 on your keyboard.
 
 
 xxx cont here
