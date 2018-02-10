@@ -151,18 +151,17 @@ library(tidyverse)
 
 Occationally you may need the source code of an R package. That is the case, for example, when you want to better understand how a function works. Here are some ways to access the source code.
 
-If you installed and loaded the package and whant to learn about one specific function, you can run the bare name of that function on the R console. For example, here is the source code of the function `read.csv`.
+If you installed and loaded the package, and want to learn about one specific function, you can run the bare name of that function on the R console. For example, here is the source code of the function `read.csv`.
 
 ```R
 read.csv
 ```
 
-That may be unhelpful because often the function you care about calls a second function, and that one calls a third one, and so on. To step into such a sequence of nested functions in at least two ways. One way is to call the function on debugger mode with `debugonce()`; Debugging is beyond the scope of this article but you can read more about it [here](xxx r packages?) and [here](xxx rstudio). A second way to step into nested functions is with RStudio -- by getting the source code and jumping from function to function by pressing F2 on your keyboard.
+If you want to see the source code of entire package, and it happens to live in a code repository such as GitHub, then you can explore the repository of that package online. For example, the see the package __dplyr__ on GitHub you can search on Google for "dplyr github". You will find that __dplyr__ lives in the organization _tidyverse_; thus the address to the __dplyr__ repository is https://github.com/tidyverse/dplyr. (The link structure generalizes to https://github.com/organization-or-usernamne/repository, and it is the same for every repository.) Likely you'll be interested in the contents of the directory R/ because R/ alwsys contains functions of R packages. If you are after something very specific, you may want to learn about the [powerful search options the GitHub offers](https://help.github.com/articles/searching-repositories/).
 
 
 xxx cont here
 
-* find its repo on GitHub or other repos
 * find source code on CRAN
 
 
