@@ -75,6 +75,14 @@ Finding good R packages is like finding good movies or books. These are some thi
 * Follow specific authors that you like (xxx @hadleywickham).
 
 ## How To Judge An R Package?
+
+xxx consider these links:
+
+https://simplystatistics.org/2015/11/06/how-i-decide-when-to-trust-an-r-package/
+
+http://www.masalmon.eu/2017/12/11/goodrpackages/ 
+
+
 To predict how much pleasure or pain an R package will give you, consider these questions:
 * Who wrote it? Some authors consistently write good packages and consistently avoid adding their names to bad ones. Prefer these authors.
 * Is the documentation clear? Clear writing comes only with clear thinking. Clear documentation thus shows that the author clearly understands what the package should and should not do. That author is able to efficiently fix bugs and answer your questions. Prefer these packages.
