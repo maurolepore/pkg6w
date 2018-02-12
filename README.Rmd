@@ -151,21 +151,18 @@ library(tidyverse)
 
 Occationally you may need the source code of an R package. That is the case, for example, when you want to better understand how a function works. Here are some ways to access the source code.
 
-If you installed and loaded the package, and want to learn about one specific function, you can run the bare name of that function on the R console. For example, here is the source code of the function `read.csv`.
+If you have already installed the package, you can run the bare name of specific functions on the R console. For example, here is the source code of the function `enlist()` from the package __MASS__.
 
 ```R
-read.csv
+library(MASS)
+enlist
 ```
 
-If you want to see the source code of entire package, and it happens to live in a code repository such as GitHub, then you can explore the repository of that package online. For example, the see the package __dplyr__ on GitHub you can search on Google for "dplyr github". You will find that __dplyr__ lives in the organization _tidyverse_; thus the address to the __dplyr__ repository is https://github.com/tidyverse/dplyr. (The link structure generalizes to https://github.com/organization-or-usernamne/repository, and it is the same for every repository.) Likely you'll be interested in the contents of the directory R/ because R/ alwsys contains functions of R packages. If you are after something very specific, you may want to learn about the [powerful search options the GitHub offers](https://help.github.com/articles/searching-repositories/).
-
-
-xxx cont here
-
-* find source code on CRAN
-
+To explore online the source code of most packages you can use GitHub. All packages published on CRAN have a mirror at https://github.com/cran/. And if the package is hosted in a public repository on GitHub you can find its source at an address with the  format https://github.com/user-or-organization-name/package-name. The functions always like in the directory R/ (consider using the [powerful search options of GitHub](https://help.github.com/articles/searching-repositories/)).
 
 ## How to contribute
+
+xxx
 
 ## How To Report Bugs
 
